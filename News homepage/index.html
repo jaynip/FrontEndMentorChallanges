@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News homepage</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background-color: aqua;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+      }
+      nav > ul {
+        display: flex;
+        gap: 20px;
+      }
+
+      nav > ul > li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        flex: 1 1 auto;
+        background-color: cadetblue;
+      }
+      main > section {
+        flex: 2 1 auto;
+        background-color: magenta;
+      }
+
+      main > aside {
+        flex: 1 1 auto;
+        background-color: pink;
+        gap: 20px;
+      }
+      footer {
+        display: flex;
+        gap: 20px;
+      }
+
+      footer > .box {
+        flex: 1 1 auto;
+        aspect-ratio: 1 / 1;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>logo</h1>
+      <nav>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 1</li>
+          <li>Item 1</li>
+          <li>Item 1</li>
+          <li>Item 1</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="box">tem 1</div>
+        <div class="box">tem 2</div>
+      </section>
+      <aside>aside</aside>
+    </main>
+    <footer>
+      <div class="box">item 1</div>
+      <div class="box">item 2</div>
+      <div class="box">item 3</div>
+    </footer>
+  </body>
+</html>
