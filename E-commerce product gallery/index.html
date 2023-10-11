@@ -1,44 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <img src="./images/icon-menu.svg" alt="menu" class="hidden menu" />
+            <img src="./images/logo.svg" alt="logo" class="nav-logo" />
+            <div class="overlay"></div>
+            <ul class="nav-links">
+              <img
+                src="./images/icon-close.svg"
+                alt="close"
+                class="close-btn hidden"
+              />
+              <li class="nav-link">Collections</li>
+              <li class="nav-link">Collections</li>
+              <li class="nav-link">Collections</li>
+              <li class="nav-link">Collections</li>
+              <li class="nav-link">Collections</li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <!-- cart -->
+            <div class="cart-container">
+              <button class="cart-btn">
+                <span class="indicator"></span>
+                <img src="./images/icon-cart.svg" alt="cart" class="cart" />
+              </button>
+              <div class="cart-wrap-invisible">
+                <p class="cart-heading">Cart</p>
+                <div class="divider"></div>
+                <div class="cart-content-empty">
+                  <p>Your cart is empty</p>
+                </div>
+              </div>
+            </div>
+            <img src="./images/image-avatar.png" alt="profile" class="avatar" />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- thumbnails -->
+        <section class="thumbnails">
+          <img
+            src="./images/image-product-1.jpg"
+            alt="product"
+            class="main-thumbnail-mobile"
+          />
+          <div class="mobile-thumb hidden">
+            <img
+              src="./images/image-product-1.jpg"
+              alt="product"
+              class="thumb-mob"
+            />
+            <button id="next">
+              <img src="./images/icon-next.svg" alt="Next" />
+            </button>
+            <button id="previous">
+              <img src="./images/icon-previous.svg" alt="Previous" />
+            </button>
+          </div>
+          <div>
+            <div class="preview">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- content  -->
+        <section class="content">
+          <p class="company">Sneaker Company</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+        </section>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jayni Patel</a>.
+    </div>
+  </body>
 </html>
